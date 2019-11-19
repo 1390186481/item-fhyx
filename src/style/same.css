@@ -98,8 +98,12 @@ header > .header > .login > .lg_btn {
   line-height: 30px;
   font-weight: 800;
   float: left;
+  overflow: hidden;
 }
 header > .header > .login > .lg_btn a {
+  display: block;
+  width: 72px;
+  height: 32px;
   color: #FF2400;
 }
 header > .header > .login > .language {
@@ -172,6 +176,7 @@ header > .h_nav > nav .game > div {
   left: -100px;
   border: 1px solid #e27a56;
   display: none;
+  z-index: 10;
 }
 header > .h_nav > nav .game > div > .game_title {
   width: 100%;
@@ -248,6 +253,12 @@ header > .h_nav > p > span {
   margin-left: 45px;
   line-height: 38px;
   color: #FF2400;
+}
+header > .h_nav > p:hover {
+  background: url(../img/index/h_city2.png) no-repeat;
+}
+header > .h_nav > p:hover > span {
+  color: white;
 }
 header > .h_nav > div {
   float: left;

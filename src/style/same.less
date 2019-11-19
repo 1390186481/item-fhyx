@@ -98,7 +98,11 @@ header{
                 line-height: 30px;
                 font-weight: 800;
                 float: left;
+                overflow: hidden;
                 a{
+                    display: block;
+                    width: 72px;
+                    height: 32px;
                     color: #FF2400;
                 }
             }
@@ -173,6 +177,7 @@ header{
                     left: -100px;
                     border: 1px solid #e27a56;
                     display: none;
+                    z-index: 10;
                     >.game_title{
                         width: 100%;
                         height: 45px;
@@ -249,6 +254,12 @@ header{
                 margin-left: 45px;
                 line-height: 38px;
                 color: #FF2400;
+            }
+            &:hover{
+                background: url(../img/index/h_city2.png) no-repeat;
+                >span{
+                    color: white;
+                }
             }
         }
         >div{
