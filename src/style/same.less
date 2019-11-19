@@ -1,0 +1,359 @@
+html,body{
+    background: #f9f9f8;
+}
+/*********************头部*********************/
+header{
+    width: 100%;
+    height: 189px;
+    background: url(../img/index/top_bg.jpg) no-repeat center -5px;
+    >.header{
+        width: 100%;
+        height: 145px;
+        //logo
+        >img{
+            float: left;
+            display: block;
+            margin: 40px auto 0 36px;
+        }
+        //搜索
+        >form{
+            float: left;
+            width: 360px;
+            height: 56px;
+            border-bottom: 2px solid #e0e0e0;
+            position: relative;
+            margin: 45px auto 0 80px;
+            >input{
+                display: block;
+                width: 288px;
+                height: 54px;
+                border: 0px;
+                outline: none;
+                background: transparent;
+                text-indent: 10px;
+                font-size: 16px;
+                caret-color: #e27a56;
+                color: #e27a56;
+                &::-webkit-input-placeholder{
+                  color:#e27a56;
+                }
+            }
+            div{
+                width: 3px;
+                height: 26px;
+                background: #e27a56;
+                position: absolute;
+                left: 0;
+                top: 14px;
+            }
+            span{
+                display: block;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                right: 0;
+                top: 12px;
+                background: url(../img/index/h_search.png) no-repeat;
+            }
+        }
+        //头部菜单
+        >.h_menu{
+            width: 400px;
+            margin: 65px 0 0 40px;
+            float: left;
+            ul{
+                list-style: none;
+                >li{
+                    float: left;
+                    width: 120px;
+                    a{
+                        display: block;
+                        width: 128px;
+                        color: black;
+                        span{
+                            float: left;
+                        }
+                        p{
+                            font-weight: 900;
+                            font-size: 18px;
+                            padding-left: 10px;
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }
+        //登陆
+        >.login{
+            width: 200px;
+            height: 50px;
+            float: left;
+            margin: 60px 0 0 100px;
+            >.lg_btn{
+                width: 72px;
+                height: 32px;
+                border: 1px solid #FF2400;
+                border-radius: 16px;
+                text-align: center;
+                line-height: 30px;
+                font-weight: 800;
+                float: left;
+                a{
+                    color: #FF2400;
+                }
+            }
+            >.language{
+                margin: 4px 0 0 10px;
+                height: 24px;
+                line-height: 24px;
+                padding: 0 10px;
+                border-left: 1px solid black;
+                float: left;
+                >span{
+                    width: 0;
+                    height: 0;
+                    border-width: 8px 4px 8px 4px;
+                    border-color: black transparent transparent transparent;
+                    border-style: solid;
+                    position: relative;
+                    top: 15px;
+                    left: 10px;
+                }
+            }
+        }
+    }
+    //导航
+    >.h_nav{
+        width: 100%;
+        height: 44px;
+        border-bottom: 3px solid #e27a56;
+        >nav{
+            width: 750px;
+            padding-left: 120px;
+            >li{
+                float: left;
+                width: 100px;
+                height: 42px;
+                font-size: 18px;
+                line-height: 42px;
+                text-align: center;
+                padding: 0 32px;
+                >span{
+                    display: block;
+                    width: 30px;
+                    height: 6px;
+                    background: red;
+                    border-radius: 3px;
+                    position: relative;
+                    top: -3px;
+                    left: 3px;
+                    display: none;
+                    z-index: 10;
+                }
+                &:hover>p{
+                    font-weight: 600;
+                }
+                &:hover>span{
+                    display: block;
+                }
+                .act_span{
+                    display: block;
+                }
+            }
+            .game{
+                //二级导航
+                position: relative;
+                >div{
+                    height: 260px;
+                    width: 485px;
+                    text-align: left;
+                    background: #f7f7f7;
+                    position: absolute;
+                    top: 43px;
+                    left: -100px;
+                    border: 1px solid #e27a56;
+                    display: none;
+                    >.game_title{
+                        width: 100%;
+                        height: 45px;
+                        padding-top: 15px;
+                        >p{
+                            font-weight: 600;
+                            font-size: 16px;
+                            text-align: left;
+                            line-height: 16px;
+                            float: left;
+                            padding: 0 0 0 30px;
+                            &:nth-child(1){
+                                width:67%;
+                            }
+                            &:nth-child(2){
+                                width:33%;
+                            }
+                            &::before{
+                                content: '';
+                                display: inline-block;
+                                width: 3px;
+                                height: 16px;
+                                background: #e27a56;
+                                border-radius: 2px;
+                                position: relative;
+                                top: 2px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                    >.game_menu{
+                        width: 100%;
+                        height: 215px;
+                        >ul{
+                            width: 100%;
+                            height: 100%;
+                            >li{
+                                float: left;
+                                width: 33%;
+                                &:nth-child(1),&:nth-child(2){
+                                    border-right: 1px solid #f2f2f2;
+                                }
+                                >div{
+                                    margin: auto;
+                                    font-size: 14px;
+                                    padding: 0 45px;
+                                    &:hover{
+                                        color: #FF2400;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover>div{
+                    display: block;
+                }
+            }
+            .act_li{
+                font-weight: 600;
+            }
+        }
+        >img{
+            margin-left: 150px;
+            float: left;
+        }
+        >p{
+            margin-left: 50px;
+            width: 115px;
+            float: left;
+            height: 42px;
+            background: url(../img/index/h_city1.png) no-repeat;
+            >span{
+                margin-left: 45px;
+                line-height: 38px;
+                color: #FF2400;
+            }
+        }
+        >div{
+            float: left;
+            margin-left:50px; 
+            color: #FF2400;
+            p{
+                float: left;
+            }
+            img{
+                float: left;
+                position: relative;
+                top: -10px;
+                left: 20px;
+            }
+        }
+    }
+}
+/************************页脚************************/ 
+.footer{
+    width: 100%;
+    height: 585px;
+    background: #333c47;
+    >.foot{
+        width: 1200px;
+        height: 100%;
+        margin: auto;
+        padding-top: 35px;
+        >.foot_list_left{
+            width: 263*3px;
+            height: 90%;
+            float: left;
+            >.foot_li{
+                width: 263px;
+                color: #9eafc3;
+                float: left;
+                min-height: 140px;
+                >p{
+                    height: 20px;
+                    margin-top: 10px;
+                    font-size: 14px;
+                    &:hover{
+                        color: #FF2400; 
+                    }
+                }
+            }
+            >.li2{
+                margin-top: 50px;
+                >p{
+                    height: 30px;
+                    line-height: 30px;
+                    >span{
+                        float: left;
+                        position: relative;
+                        top: -2px;
+                    }
+                    >img{
+                        float: left;
+                    }
+                }
+                >img{
+                    padding-top: 25px;
+                }
+            }
+        }
+        >.foot_list_right{
+            width: 400px;
+            height: 495px;
+            color: #9eafc3;
+            float: left;
+            >.foot_li{
+                float: left;
+                margin-right: 75px;
+                >img{
+                    margin-top: 45px;
+                }
+                >div{
+                    border: 1px solid #9eafc3;
+                    width: 133px;
+                    height: 33px;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 18px;
+                    margin: 30px 0 0 -20px;
+                }
+            }
+            >.li2{
+                min-height: 210px;
+            }
+            >.li_po{
+                position: relative;
+                top: -70px;
+            }
+        }
+        >.foot_last{
+            width: 1200px;
+            height: 50px;
+            float: left;
+            text-align: center;
+            color: #9eafc3;
+            >p{
+                height: 25px;
+                line-height: 25px;
+                font-size: 14px;
+            }
+        }
+    }
+}

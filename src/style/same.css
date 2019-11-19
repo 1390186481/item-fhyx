@@ -1,0 +1,355 @@
+html,
+body {
+  background: #f9f9f8;
+}
+/*********************头部*********************/
+header {
+  width: 100%;
+  height: 189px;
+  background: url(../img/index/top_bg.jpg) no-repeat center -5px;
+}
+header > .header {
+  width: 100%;
+  height: 145px;
+}
+header > .header > img {
+  float: left;
+  display: block;
+  margin: 40px auto 0 36px;
+}
+header > .header > form {
+  float: left;
+  width: 360px;
+  height: 56px;
+  border-bottom: 2px solid #e0e0e0;
+  position: relative;
+  margin: 45px auto 0 80px;
+}
+header > .header > form > input {
+  display: block;
+  width: 288px;
+  height: 54px;
+  border: 0px;
+  outline: none;
+  background: transparent;
+  text-indent: 10px;
+  font-size: 16px;
+  caret-color: #e27a56;
+  color: #e27a56;
+}
+header > .header > form > input::-webkit-input-placeholder {
+  color: #e27a56;
+}
+header > .header > form div {
+  width: 3px;
+  height: 26px;
+  background: #e27a56;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+header > .header > form span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  background: url(../img/index/h_search.png) no-repeat;
+}
+header > .header > .h_menu {
+  width: 400px;
+  margin: 65px 0 0 40px;
+  float: left;
+}
+header > .header > .h_menu ul {
+  list-style: none;
+}
+header > .header > .h_menu ul > li {
+  float: left;
+  width: 120px;
+}
+header > .header > .h_menu ul > li a {
+  display: block;
+  width: 128px;
+  color: black;
+}
+header > .header > .h_menu ul > li a span {
+  float: left;
+}
+header > .header > .h_menu ul > li a p {
+  font-weight: 900;
+  font-size: 18px;
+  padding-left: 10px;
+  float: left;
+}
+header > .header > .login {
+  width: 200px;
+  height: 50px;
+  float: left;
+  margin: 60px 0 0 100px;
+}
+header > .header > .login > .lg_btn {
+  width: 72px;
+  height: 32px;
+  border: 1px solid #FF2400;
+  border-radius: 16px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 800;
+  float: left;
+}
+header > .header > .login > .lg_btn a {
+  color: #FF2400;
+}
+header > .header > .login > .language {
+  margin: 4px 0 0 10px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 10px;
+  border-left: 1px solid black;
+  float: left;
+}
+header > .header > .login > .language > span {
+  width: 0;
+  height: 0;
+  border-width: 8px 4px 8px 4px;
+  border-color: black transparent transparent transparent;
+  border-style: solid;
+  position: relative;
+  top: 15px;
+  left: 10px;
+}
+header > .h_nav {
+  width: 100%;
+  height: 44px;
+  border-bottom: 3px solid #e27a56;
+}
+header > .h_nav > nav {
+  width: 750px;
+  padding-left: 120px;
+}
+header > .h_nav > nav > li {
+  float: left;
+  width: 100px;
+  height: 42px;
+  font-size: 18px;
+  line-height: 42px;
+  text-align: center;
+  padding: 0 32px;
+}
+header > .h_nav > nav > li > span {
+  display: block;
+  width: 30px;
+  height: 6px;
+  background: red;
+  border-radius: 3px;
+  position: relative;
+  top: -3px;
+  left: 3px;
+  display: none;
+  z-index: 10;
+}
+header > .h_nav > nav > li:hover > p {
+  font-weight: 600;
+}
+header > .h_nav > nav > li:hover > span {
+  display: block;
+}
+header > .h_nav > nav > li .act_span {
+  display: block;
+}
+header > .h_nav > nav .game {
+  position: relative;
+}
+header > .h_nav > nav .game > div {
+  height: 260px;
+  width: 485px;
+  text-align: left;
+  background: #f7f7f7;
+  position: absolute;
+  top: 43px;
+  left: -100px;
+  border: 1px solid #e27a56;
+  display: none;
+}
+header > .h_nav > nav .game > div > .game_title {
+  width: 100%;
+  height: 45px;
+  padding-top: 15px;
+}
+header > .h_nav > nav .game > div > .game_title > p {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: left;
+  line-height: 16px;
+  float: left;
+  padding: 0 0 0 30px;
+}
+header > .h_nav > nav .game > div > .game_title > p:nth-child(1) {
+  width: 67%;
+}
+header > .h_nav > nav .game > div > .game_title > p:nth-child(2) {
+  width: 33%;
+}
+header > .h_nav > nav .game > div > .game_title > p::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 16px;
+  background: #e27a56;
+  border-radius: 2px;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+}
+header > .h_nav > nav .game > div > .game_menu {
+  width: 100%;
+  height: 215px;
+}
+header > .h_nav > nav .game > div > .game_menu > ul {
+  width: 100%;
+  height: 100%;
+}
+header > .h_nav > nav .game > div > .game_menu > ul > li {
+  float: left;
+  width: 33%;
+}
+header > .h_nav > nav .game > div > .game_menu > ul > li:nth-child(1),
+header > .h_nav > nav .game > div > .game_menu > ul > li:nth-child(2) {
+  border-right: 1px solid #f2f2f2;
+}
+header > .h_nav > nav .game > div > .game_menu > ul > li > div {
+  margin: auto;
+  font-size: 14px;
+  padding: 0 45px;
+}
+header > .h_nav > nav .game > div > .game_menu > ul > li > div:hover {
+  color: #FF2400;
+}
+header > .h_nav > nav .game:hover > div {
+  display: block;
+}
+header > .h_nav > nav .act_li {
+  font-weight: 600;
+}
+header > .h_nav > img {
+  margin-left: 150px;
+  float: left;
+}
+header > .h_nav > p {
+  margin-left: 50px;
+  width: 115px;
+  float: left;
+  height: 42px;
+  background: url(../img/index/h_city1.png) no-repeat;
+}
+header > .h_nav > p > span {
+  margin-left: 45px;
+  line-height: 38px;
+  color: #FF2400;
+}
+header > .h_nav > div {
+  float: left;
+  margin-left: 50px;
+  color: #FF2400;
+}
+header > .h_nav > div p {
+  float: left;
+}
+header > .h_nav > div img {
+  float: left;
+  position: relative;
+  top: -10px;
+  left: 20px;
+}
+/************************页脚************************/
+.footer {
+  width: 100%;
+  height: 585px;
+  background: #333c47;
+}
+.footer > .foot {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  padding-top: 35px;
+}
+.footer > .foot > .foot_list_left {
+  width: 789px;
+  height: 90%;
+  float: left;
+}
+.footer > .foot > .foot_list_left > .foot_li {
+  width: 263px;
+  color: #9eafc3;
+  float: left;
+  min-height: 140px;
+}
+.footer > .foot > .foot_list_left > .foot_li > p {
+  height: 20px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.footer > .foot > .foot_list_left > .foot_li > p:hover {
+  color: #FF2400;
+}
+.footer > .foot > .foot_list_left > .li2 {
+  margin-top: 50px;
+}
+.footer > .foot > .foot_list_left > .li2 > p {
+  height: 30px;
+  line-height: 30px;
+}
+.footer > .foot > .foot_list_left > .li2 > p > span {
+  float: left;
+  position: relative;
+  top: -2px;
+}
+.footer > .foot > .foot_list_left > .li2 > p > img {
+  float: left;
+}
+.footer > .foot > .foot_list_left > .li2 > img {
+  padding-top: 25px;
+}
+.footer > .foot > .foot_list_right {
+  width: 400px;
+  height: 495px;
+  color: #9eafc3;
+  float: left;
+}
+.footer > .foot > .foot_list_right > .foot_li {
+  float: left;
+  margin-right: 75px;
+}
+.footer > .foot > .foot_list_right > .foot_li > img {
+  margin-top: 45px;
+}
+.footer > .foot > .foot_list_right > .foot_li > div {
+  border: 1px solid #9eafc3;
+  width: 133px;
+  height: 33px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 18px;
+  margin: 30px 0 0 -20px;
+}
+.footer > .foot > .foot_list_right > .li2 {
+  min-height: 210px;
+}
+.footer > .foot > .foot_list_right > .li_po {
+  position: relative;
+  top: -70px;
+}
+.footer > .foot > .foot_last {
+  width: 1200px;
+  height: 50px;
+  float: left;
+  text-align: center;
+  color: #9eafc3;
+}
+.footer > .foot > .foot_last > p {
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+}

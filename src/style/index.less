@@ -1,0 +1,1155 @@
+
+/*********************轮播图*********************/
+.banner{
+    width: 100%;
+    height: 565px;
+    position: relative;
+    background: url(../img/index/banner_1.jpg) no-repeat;
+    .bannerContent{
+        width: 1200px;
+        height: 144px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -600px;
+        >.banner_menu{
+            height: 144px;
+            width: 380px;
+            position: absolute;
+            float: left;
+            opacity: 0.8;
+            &:nth-child(1){
+                left: 0;
+                background: url(../img/index/banner_menu1.png) no-repeat;
+            }
+            &:nth-child(2){
+                left: 400px;
+                background: url(../img/index/banner_menu2.png) no-repeat;
+            }
+            &:nth-child(3){
+                left: 800px;
+                background: url(../img/index/banner_menu3.png) no-repeat;
+            }
+            p{
+                position: absolute;
+                color: white;
+                &:nth-child(1){
+                    font-size: 26px;
+                    top: 35px;
+                    left: 50px;
+                }
+                &:nth-child(2){
+                    font-size: 20px;
+                    top: 75px;
+                    left: 50px;
+                }
+                &:nth-child(3){
+                    top: 67px;
+                    left: 287px;
+                }
+            }
+        }
+    }
+    //滑动按钮
+    >.slide_btn{
+        >.sb{
+            width: 60px;
+            height: 150px;
+            position: absolute;
+            top: 30%;
+            display: none;
+        }
+        >.sb_left{
+            background: url(../img/index/cn_l.png) no-repeat;
+            left: 50px;
+        }
+        >.sb_right{
+            background: url(../img/index/cn_r.png) no-repeat;
+            right: 50px;
+        }
+    }
+    &:hover{
+        >.slide_btn{
+            >.sb{
+                display: block;
+            }
+        }
+    }
+}
+/*********************详情栏--标题栏*********************/
+.news{
+    margin: auto;
+    width: 1200px;
+    .title{
+        width: 100%;
+        height: 40px;
+        h3{
+            font-size: 20px;
+            float: left;
+            width: 200px;
+            padding-right: 100px;
+            &::before{
+                content: "";
+                display: inline-block;
+                width: 6px;
+                height: 20px;
+                background: #FF2400;
+                border-radius: 3px;
+                position: relative;
+                top: 2px;
+                margin-right: 10px;
+            }
+        }
+        >div{
+            width: 1000px;
+            height: 40px;
+            float: left;
+            font-size: 18px;
+            border-bottom: 1px solid #ececec;
+            >.cab{
+                width: 75px;
+                height: 35px;
+                float: left;
+                text-align: center;
+                line-height: 35px;
+                margin-left: 50px;
+                position: relative;
+                >span{
+                    display: none;
+                    width: 50px;
+                    height: 4px;
+                    position: absolute;
+                    background: #FF2400;
+                    border-radius: 2px;
+                    top: 35px;
+                    left: 12px;
+                }
+            }
+            .more{
+                font-size: 16px;
+                width: 80px;
+                height: 35px;
+                float: right;
+                border: 1px solid #bdbdbd;
+                text-align: center;
+                line-height: 32px;
+                border-radius: 7px;
+            }
+            >.act_cab{
+                font-weight: 600;
+                >span{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+/*********************详情栏--PC游戏*********************/
+.PCgame{
+    height: 430px;
+    margin: 75px auto;
+    >.PC_game{
+        height: 265px;
+        margin-top: 35px;
+        border-bottom: 1px solid #cdcdcd;
+        >.PC_game_menu{
+            height: 345px;
+            width: 1200px;
+            overflow: hidden;
+            position: relative;
+            >ul{
+                width: 2250px;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                // left: -1000px;
+                top: 0;
+                >li{
+                    width: 175px;
+                    height: 100%;
+                    margin-right: 50px;
+                    float: left;
+                    a{
+                        display: block;
+                        width: 175px;
+                        height: 227px;
+                        position: relative;
+                        img{
+                            width: 160px;
+                            height: 212px;
+                        }
+                        >.takeIt{
+                            width: 110px;
+                            height: 36px;
+                            background: #FF2400;
+                            line-height: 36px;
+                            text-align: center;
+                            border-radius: 18px;
+                            position: absolute;
+                            left: 24px;
+                            top: 95px;
+                            color: white;
+                            display: none;
+                        }
+                        span{
+                            display: block;
+                            height: 34px;
+                            float: left;
+                            position: absolute;
+                            bottom: 15px;
+                            &:nth-of-type(1){
+                                background: #52872f;
+                                width: 74px;
+                                font-size: 18px;
+                                font-weight: 600;
+                                text-align: center;
+                                line-height: 34px;
+                                color: #a0f76c;
+                            }
+                            &:nth-of-type(2){
+                                width: 54px;
+                                background: #203d50;
+                                color: #b1d2e7;
+                                font-size: 12px;
+                                left: 74px;
+                                >s{
+                                    color: #50748b;
+                                }
+                            }
+                        }
+                    }
+                    >.PC_date{
+                        >p{
+                            position: relative;
+                            width: 112px;
+                            height: 17px;
+                            line-height: 17px;
+                            padding-left: 32px;
+                            margin-left: 23px;
+                            background-color: white;
+                            margin-top: 28px;
+                            margin-bottom: 25px;
+                            >span{
+                                position: absolute;
+                                left: 12px;
+                                top: 2px;
+                                width: 14px;
+                                height: 14px;
+                                border-radius: 50%;
+                                background: #dbdbdb;
+                                >span{
+                                    width: 6px;
+                                    height: 6px;
+                                    border-radius: 50%;
+                                    z-index: 5;
+                                    position: absolute;
+                                    left: 4px;
+                                    top: 4px;
+                                    background: #efefef;
+                                }
+                            }
+                        }
+                    }
+                    >.PC_js{
+                        p{
+                            text-align: center;
+                            font-weight: 600;
+                            margin-bottom: 5px;
+                            &:nth-child(1){
+                                &:hover{
+                                    color: #FF2400;
+                                }
+                            }
+                            &:nth-child(2){
+                                opacity: 0.6;
+                                font-size: 14px;
+                                font-weight: 500;
+                                margin: 0;
+                                width: 175px;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                    }
+                    &:hover{
+                        >a{
+                            >img{
+                                box-shadow: 9px 9px 10px #efab9d;
+                                display: block;
+                                border: 1.5px solid #e27a56;
+                            }
+                            >.takeIt{
+                                display: block;
+                            }
+                        }
+                        >.PC_date{
+                            >p{
+                                >span{
+                                    background: #FF2400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*********************详情栏--展开效果*********************/
+.open_anime{
+    width: 1212px;
+    margin: auto;
+    height: 135px;
+    overflow: hidden;
+    >.group{
+        width: 2424px;
+        height: 135px;
+        position: relative;
+        >.one_show{
+            width: 286px;
+            height: 100%;
+            float: left;
+            margin-right: 18px;
+            overflow: hidden;
+            &:last-child{
+                margin: 0;
+            }
+            >.onegroup{
+                width: 1212px;
+                height: 120px;
+                >img{
+                    border-radius: 10px;
+                    float: left;
+                    margin-right: 12px;
+                }
+                >span{
+                    display: inline-block;
+                    position: relative;
+                    top: -10px;
+                    width: 286px;
+                    text-align: center;
+                }
+            }
+            &:hover{
+                animation: onegroup 1s linear;
+                width: 1212px;
+            }
+        }
+    }
+}
+/************热门精选和折扣促销相同的一部分**************/ 
+.right_comm{
+    >ul{
+        >li{
+            width: 286px;
+            height: 190px;
+            margin-left: 30px;
+            float: left;
+            border-radius: 10px;
+            overflow: hidden;
+            >pic{
+                display: block;
+                width: 286px;
+                height: 135px;
+                background-size: 100%;
+                >div{
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    background: white;
+                    >p{
+                        &:nth-child(1){
+                            font-size: 18px;
+                            text-align: center;
+                            padding: 20px 0 12px 0;
+                        }
+                        &:nth-child(2){
+                            font-size: 14px;
+                            text-align: center;
+                            color: #9c9c9c;
+                        }
+                    }
+                    >div{
+                        margin: 20px auto 0 auto;
+                        width: 102px;
+                        height: 32px;
+                        background:white;
+                        border: 1px solid #FF2400;
+                        border-radius: 16px;
+                        text-align: center;
+                        line-height: 30px;
+                        color: #FF2400;
+                        &:hover{
+                            background:#FF2400;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            >div{
+                height: 55px;
+                width: 100%;
+                padding: 10px 0;
+                background:white;
+                >span{
+                    height: 35px;
+                    width: 78px;
+                    background: #74ad4e;
+                    float: left;
+                    color: white;
+                    text-align: center;
+                    line-height: 35px;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                >div{
+                    height: 35px;
+                    width: 80px;
+                    float: left;
+                    >p{
+                        margin-left: 15px;
+                        &:nth-child(1){
+                            font-size: 12px;
+                            color: #afafaf;
+                            text-decoration: line-through;
+                        }
+                        &:nth-child(2){
+                            font-size: 14px;
+                            color: #FF2400;
+                        }
+                    }
+                }
+                >s{
+                    float: right;
+                    margin-right: 10px;
+                    width: 75px;
+                    height: 25px;
+                    margin-top: 10px;
+                }
+            }
+            &:hover{
+                >pic{
+                    background: transparent;
+                    >div{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*********************详情栏--热门精选*********************/
+.hot_game{
+    width: 1200px;
+    margin: 50px auto;
+    >.hot_box{
+        width: 1200px;
+        height: 540px;
+        margin-top: 20px;
+        >.hot_top{
+            width: 100%;
+            height: 410px;
+            margin-bottom: 30px;
+            >.hot_top_left{
+                height: 100%;
+                float: left;
+                >.hot_banner{
+                    img{
+                        display: block;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            >.hot_top_right{
+                height: 100%;
+                float: left;
+                width: 640px;
+                >ul{
+                    >li{  
+                        &:nth-child(1){
+                            margin-bottom: 30px;
+                            >pic{
+                                background-image: url(../img/index/hot_bimg1.jpg)
+                            }
+                        }
+                        &:nth-child(2){
+                            margin-bottom: 30px;
+                            >pic{
+                                background-image: url(../img/index/hot_bimg2.jpg)
+                            }
+                        }
+                        &:nth-child(3){
+                            >pic{
+                                background-image: url(../img/index/hot_bimg3.jpg)
+                            }
+                        }
+                        &:nth-child(4){
+                            >pic{
+                                background-image: url(../img/index/hot_bimg4.png)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        >.hot_down{
+            height: 100px;
+            margin-top: 30px;
+            >ul{
+                >li{
+                    float: left;
+                    margin-right: 37.5px;
+                    box-shadow: 0px 0px 10px #999;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    >div{
+                        width: 210px;
+                        height: 100px;
+                        &:nth-child(1){
+                            background-size: 100%;
+                        }
+                        &:nth-child(2){
+                            display: block;
+                            background:white;
+                            display: none;
+                            >p{
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow:ellipsis; 
+                                text-align: center;
+                                margin: auto;
+                                &:nth-child(1){
+                                    width: 120px;
+                                    font-size: 16px;
+                                    color: #FF2400;
+                                    padding:10px 0;
+                                }
+                                &:nth-child(2){
+                                    width: 160px;
+                                    font-size: 12px;
+                                    color: #9c9c9c;
+                                }
+                            }
+                            >div{
+                                height: 22px;
+                                margin-top: 15px;
+                                >span{
+                                    height: 22px;
+                                    width: 38px;
+                                    background: #74ad4e;
+                                    float: left;
+                                    color: white;
+                                    text-align: center;
+                                    line-height: 22px;
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                }
+                               >p{
+                                    height: 22px;
+                                    line-height: 22px;
+                                    width: 40px;
+                                    float: left;
+                                    margin-left: 15px;
+                                    font-size: 14px;
+                                    color: #FF2400;
+                                }
+                                >s{
+                                    float: right;
+                                    margin-right: 10px;
+                                    width: 75px;
+                                    height: 22px;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(1){
+                        >div{
+                            &:nth-child(1){
+                                background-image: url(../img/index/hot_simg1.jpg);
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        >div{
+                            &:nth-child(1){
+                                background-image: url(../img/index/hot_simg2.jpg);
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        >div{
+                            &:nth-child(1){
+                                background-image: url(../img/index/hot_simg3.jpg);
+                            }
+                        }
+                    }
+                    &:nth-child(4){
+                        >div{
+                            &:nth-child(1){
+                                background-image: url(../img/index/hot_simg4.jpg);
+                            }
+                        }
+                    }
+                    &:nth-child(5){
+                        margin: 0;
+                        >div{
+                            &:nth-child(1){
+                                background-image: url(../img/index/hot_simg5.jpg);
+                            }
+                        }
+                    }
+                    &:hover{
+                        >div{
+                            &:nth-child(1){
+                                display: none;
+                            }
+                            &:nth-child(2){
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*********************详情栏--折扣促销*********************/
+.discount_game{
+    width: 1200px;
+    margin: auto;
+    .discount_box{
+        width: 100%;
+        height: 450px;
+        margin-top: 30px;
+        >.discount_left{
+            float: left;
+            width: 560px;
+            height: 100%;
+            >.dc_l_left{
+                float: left;
+                width: 260px;
+                height: 410px;
+                border-radius: 10px;
+            }
+            >.dc_l_right{
+                float: left;
+                margin-left: 35px;
+                width: 260px;
+                height: 410px;
+                border-radius: 10px;
+            }
+            >div{
+                overflow: hidden;
+                position: relative;
+                img{
+                    display: block;
+                    position: absolute;
+                    z-index: 1;
+                    transition: transform 1s;
+                }
+                >p{
+                    position: relative;
+                    z-index: 10;
+                    color: white;
+                    text-align: center;
+                    width: 100%;
+                    &:nth-child(2){
+                        font-size: 22px;
+                        padding: 60px 0 0 0;
+                        font-weight: 600;
+                    }
+                    &:nth-child(3){
+                        font-size: 14px;
+                        color: #acad88;
+                        padding: 10px 0 100px 0;
+                    }
+                    &:nth-child(4){
+                        font-size: 60px;
+                        font-weight: 600;
+                    }
+                    &:nth-child(5){
+                        font-size: 16px;
+                        padding: 10px 0 20px 0;
+                    }
+                }
+                >div{
+                    position: relative;
+                    z-index: 10;
+                    margin: auto;
+                    width: 140px;
+                    height: 40px;
+                    border-radius: 20px;
+                    background: black;
+                    border: 2px solid #FF2400;
+                    color: #FF2400;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 38px;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+        >.discount_right{
+            float: left;
+            width: 640px;
+            >ul{
+                >li{
+                    &:nth-child(1){
+                        margin-bottom: 30px;
+                        >pic{
+                            background-image: url(../img/index/discount_simg1.jpg)
+                        }
+                    }
+                    &:nth-child(2){
+                        margin-bottom: 30px;
+                        >pic{
+                            background-image: url(../img/index/discount_simg2.jpg)
+                        }
+                    }
+                    &:nth-child(3){
+                        >pic{
+                            background-image: url(../img/index/discount_simg3.jpg)
+                        }
+                    }
+                    &:nth-child(4){
+                        >pic{
+                            background-image: url(../img/index/discount_simg4.jpg)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*********************详情栏--凤凰出品*********************/
+.fhyx_game_bg{
+    width: 100%;
+    height: 600px;
+    background: url(../img/index/fhyx_bg.jpg) no-repeat;
+    .fhyx_game{
+        width: 1200px;
+        margin: auto;
+        height: 600px;
+        padding-top:30px; 
+        >.fhyx_game_box{
+            width: 100%;
+            height: 455px;
+            margin-top: 50px;
+            >.fhyx_game_left{
+                width: 300px;
+                height: 100%;
+                float: left;
+                >p{
+                    &:nth-child(1){
+                        font-size: 40px;
+                        font-weight: 600;
+                        padding: 20px 0 15px 0;
+                        >b{
+                            color: #FF2400;
+                        }
+                    }
+                    &:nth-child(2){
+                        font-weight: 600;
+                        font-size: 26px;
+                    }
+                    &:nth-child(4){
+                        font-size: 22px;
+                    }
+                }
+                >span{
+                    display: block;
+                    width: 60px;
+                    height: 6px;
+                    border-radius: 3px;
+                    background-color: #808080;
+                    margin-top: 30px;
+                    margin: 50px 0 30px 0;
+                }
+                >div{
+                    width: 260px;
+                    height: 47px;
+                    color: #FF2400;
+                    border: 1px solid #FF2400;
+                    border-radius: 24px;
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 45px;
+                    margin-top: 135px;
+                }
+            }
+            >.fhyx_game_right{
+                width: 900px;
+                float: left;
+                >ul{
+                    >li{
+                        position: relative;
+                        width: 270px;
+                        height: 450px;
+                        overflow: hidden;
+                        float: left;
+                        margin-right: 30px;
+                        border-radius: 10px;
+                        >img{
+                            display: block;
+                            position: absolute;
+                            transition: transform .5s;
+                        }
+                        >p{
+                            position: absolute;
+                            width: 236px;
+                            color: white;
+                            padding-left: 20px;
+                            z-index: 10;
+                            &:nth-child(2){
+                                font-size: 18px;
+                                font-weight: 600;
+                                top: 200px;
+                                display: none;
+                            }
+                            &:nth-child(3){
+                                font-size: 20px;
+                                top: 385px;
+                            }
+                            &:nth-child(4){
+                                font-size: 12px;
+                                top: 415px;
+                                color: #9c9c9c;
+                            }
+                        }
+                        >div{
+                            width: 100px;
+                            height: 35px;
+                            background: transparent;
+                            border: 2px solid #FF2400;
+                            color: #FF2400;
+                            position: absolute;
+                            bottom: 20px;
+                            text-align: center;
+                            line-height: 30px;
+                            border-radius: 18px;
+                            &:nth-of-type(1){
+                                left: 20px;
+                                display: none;
+                                z-index: 10;
+                                &:hover{
+                                        color: white;
+                                        background: #FF2400;
+                                }
+                            }
+                            &:nth-of-type(2){
+                                left: 140px;
+                                display: none;
+                                z-index: 10;
+                                &:hover{
+                                    color: white;
+                                    background: #FF2400;
+                                }
+                            }
+                            &:nth-of-type(3){
+                                border: none;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100px;
+                                background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,0.8),transparent);
+                            }
+                        }
+                        &:hover{
+                            >img{
+                                transform: scale(1.2);
+                            }
+                            >p{
+                                &:nth-of-type(1){
+                                    display: block;
+                                }
+                                &:nth-of-type(2){
+                                    top: 335px;
+                                }
+                                &:nth-of-type(3){
+                                    top: 365px;
+                                }
+                            }
+                            >div{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*********************详情栏--主机专区*********************/
+.zhuji_bg{
+    width: 100%;
+    height: 540px;
+    margin-top: 50px;
+    background: url(../img/index/zhuji_bg.jpg) no-repeat;
+    background-position-y: 50px; 
+    >.zhuji{
+        width: 1200px;
+        height: 490px;
+        margin: auto;
+        >.zhuji_box{
+            width: 1200px;
+            height: 100%;
+            margin-top: 20px;
+            >ul{
+                >li{
+                    width: 225px;
+                    height: 490px;
+                    margin-right: 225px;
+                    float: left;
+                    position: relative;
+                    background-repeat: no-repeat;
+                    background-position:0 0;
+                    background-size: 100% 100%; 
+                    >.list{
+                        width: 1200px;
+                        height: 365px;
+                        background: white;
+                        padding: 45px 0 20px 0; 
+                        position: absolute;
+                        display: none;
+                        >.list_left{
+                            width: 620px;
+                            height: 300px;
+                            border-right: 1px solid #9c9c9c;
+                            position: relative;
+                            overflow: hidden;
+                            float: left;
+                            >img{
+                                float: left;
+                                position: absolute;
+                            }
+                            >div{
+                                width: 275px;
+                                height: 275px;
+                                margin-left: 300px;
+                                padding-top: 30px;
+                                position: absolute;
+                                left: 31px;
+                                transition: top 1s;
+                                >p{
+                                    &:nth-of-type(1){
+                                        font-size: 25px;
+                                        font-weight: 600;
+                                    }
+                                    &:nth-of-type(2){
+                                        font-size: 18px;
+                                        padding: 20px 0 60px 0;
+                                    }
+                                }
+                                >div{
+                                    width: 222px;
+                                    height: 40px;
+                                    >span{
+                                        width: 110px;
+                                        height: 40px;
+                                        font-size: 20px;
+                                        text-align: center;
+                                        line-height: 36px;
+                                        float: left;
+                                    }
+                                }
+                            }
+                        }
+                        >.list_right{
+                            width: 525px;
+                            height: 250px;
+                            margin: 30px 0 0 10px;
+                            float: left;
+                            overflow: hidden;
+                            position: relative;
+                            >div{
+                                width: 525px;
+                                height: 235px;
+                                position: absolute;
+                                >div{
+                                    width: 145px;
+                                    height: 235px;
+                                    margin-left: 30px;
+                                    border-radius: 10px;
+                                    overflow: hidden;
+                                    float: left;
+                                    >img{
+                                        display: block;
+                                        width: 145px;
+                                        height: 180px;
+                                    }
+                                    >div{
+                                        width: 100%;
+                                        font-size: 18px;
+                                        height: 55px;
+                                        color: white;
+                                        text-align: center;
+                                        line-height: 55px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        >.list{
+                           display: block;
+                            >.list_left{
+                                >img{
+                                    animation: fd .5s linear;
+                                }
+                                >div{
+                                    animation: down .6s linear;
+                                }
+                            }
+                            >.list_right{
+                               >div{
+                                   animation: rightslide 0.5s linear;
+                               }
+                            }
+                        }
+                    }
+                }
+                >.ps4{
+                    background-image: url(../img/index/ps4_bg.png);
+                    >.ps4_menu{   
+                        >img{
+                            position: absolute;
+                            left: 40px;
+                            top: 70px;
+                        }
+                    }
+                    >.ps4_list{
+                        left: 8px;
+                        z-index: 5;
+                        >.ps4_left{
+                            width: 620px;
+                            border-right: 1px solid #9c9c9c;
+                            >img{
+                                left: 32px;
+                                top: 25px;
+                            }
+                            >div{
+                                >div{
+                                    border: 1px solid #0469f5;
+                                    >span{
+                                        &:nth-of-type(1){
+                                            color: #0469f5;
+                                        }
+                                        &:nth-of-type(2){
+                                            color: white;
+                                            background: #0469f5;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        >.ps4_right{
+                            >div{
+                                >div{
+                                    >div{
+                                        background: #0469f5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                >.ns{
+                    background-image: url(../img/index/ns_bg.png);
+                    >.ns_menu{   
+                        >img{
+                            position: absolute;
+                            left: -10px;
+                            top: 100px;
+                        }
+                    }
+                    >.ns_list{
+                        left: -450+8px;
+                        display: none;
+                        z-index: 5;
+                        >.ns_left{
+                            width: 620px;
+                            border-right: 1px solid #9c9c9c;
+                            >img{
+                                left: 5px;
+                                top: 45px;
+                            }
+                            >div{
+                                >div{
+                                    border: 1px solid #FF2400;
+                                    >span{
+                                        &:nth-of-type(1){
+                                            color: #FF2400;
+                                        }
+                                        &:nth-of-type(2){
+                                            color: white;
+                                            background: #FF2400;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        >.ns_right{
+                            >div{
+                                >div{
+                                    background: #FF2400;
+                                }
+                            }
+                        }
+                    }
+                }
+                >.xbox{
+                    margin: 0;
+                    background-image: url(../img/index/xbox_bg.png);
+                    >.xbox_menu{   
+                        >img{
+                            position: absolute;
+                            left: 0px;
+                            top: 90px;
+                        }
+                    }
+                    >.xbox_list{
+                        left: -900+8px;
+                        display: none;
+                        z-index: 5;
+                        >.xbox_left{
+                            width: 620px;
+                            border-right: 1px solid #9c9c9c;
+                            >img{
+                                left: -8px;
+                                top: 45px;
+                            }
+                            >div{
+                                >div{
+                                    border: 1px solid #44bb4f;
+                                    >span{
+                                        &:nth-of-type(1){
+                                            color: #44bb4f;
+                                        }
+                                        &:nth-of-type(2){
+                                            color: white;
+                                            background: #44bb4f;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        >.xbox_right{
+                            >div{
+                                >div{
+                                    background: #44bb4f;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
