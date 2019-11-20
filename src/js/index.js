@@ -219,5 +219,3 @@ $('.one_show').on('mouseout', function(e) {
         left: 0
     }, 1000);
 })
-
-//

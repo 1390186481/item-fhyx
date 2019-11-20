@@ -142,6 +142,11 @@ header > .h_nav > nav > li {
   text-align: center;
   padding: 0 32px;
 }
+header > .h_nav > nav > li > a {
+  display: block;
+  height: 42px;
+  color: black;
+}
 header > .h_nav > nav > li > span {
   display: block;
   width: 30px;

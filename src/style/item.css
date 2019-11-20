@@ -1,0 +1,394 @@
+.game_body {
+  width: 1200px;
+  margin: auto;
+}
+.game_title {
+  width: 100%;
+  height: 135px;
+  padding-top: 50px;
+}
+.game_title > h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.game_title > span {
+  color: #747474;
+}
+.game_title > div {
+  float: right;
+  width: 260px;
+  position: relative;
+  top: -5px;
+}
+.game_title > div > span {
+  float: left;
+  width: 40px;
+  height: 30px;
+  margin: 0 0 0 20px;
+}
+.game_describe {
+  width: 100%;
+  height: 720px;
+  background: #27303c;
+}
+.game_describe > .des_top {
+  height: 515px;
+  padding-top: 15px;
+  color: #acb7c9;
+}
+.game_describe > .des_top > .des_top_left {
+  float: left;
+  width: 735px;
+  height: 500px;
+  padding-left: 15px;
+  border-right: 1px solid rgba(78, 94, 117, 0.48);
+}
+.game_describe > .des_top > .des_top_left > .des_big {
+  width: 687px;
+  height: 386px;
+  position: relative;
+}
+.game_describe > .des_top > .des_top_left > .des_big > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.game_describe > .des_top > .des_top_left > .des_big > .movebox {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background: rgba(11, 96, 255, 0.6);
+}
+.game_describe > .des_top > .des_top_left > .des_top_small {
+  margin-top: 25px;
+}
+.game_describe > .des_top > .des_top_left > .des_top_small > img {
+  width: 116px;
+  height: 65px;
+  border-radius: 5px;
+  margin-right: 21px;
+  vertical-align: middle;
+}
+.game_describe > .des_top > .des_top_left > .des_top_small > .des_act {
+  width: 122px;
+  height: 71px;
+  border: 3px solid;
+}
+.game_describe > .des_top > .des_top_right {
+  float: left;
+  width: 450px;
+  height: 500px;
+  padding: 15px 0 0 45px;
+}
+.game_describe > .des_top > .des_top_right > .des_des {
+  float: left;
+}
+.game_describe > .des_top > .des_top_right > .des_des > img {
+  width: 185px;
+  height: 86px;
+  float: left;
+}
+.game_describe > .des_top > .des_top_right > .des_des > p {
+  width: 220px;
+  padding: 18px 20px 0 30px;
+  float: left;
+  line-height: 25px;
+}
+.game_describe > .des_top > .des_top_right > .select {
+  float: left;
+  width: 405px;
+  height: 200px;
+  margin-top: 20px;
+  padding-top: 30px;
+  border-top: 1px solid #747474;
+}
+.game_describe > .des_top > .des_top_right > .select > label {
+  width: 75px;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+}
+.game_describe > .des_top > .des_top_right > .select > div {
+  float: left;
+  width: 270px;
+  border-radius: 10px;
+  height: 105px;
+}
+.game_describe > .des_top > .des_top_right > .select > div > span {
+  float: left;
+  display: block;
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #747474;
+  text-align: center;
+  line-height: 40px;
+}
+.game_describe > .des_top > .des_top_right > .select > div .sl_act {
+  border: 2px solid #b1d2e7;
+  width: 102px;
+  margin-top: 8px;
+  height: 42px;
+}
+.game_describe > .des_top > .des_top_right > .select > div:nth-child(4) > span {
+  width: 75px;
+}
+.game_describe > .des_top > .des_top_right > .des_price {
+  width: 100%;
+  float: left;
+  height: 110px;
+  padding-top: 45px;
+}
+.game_describe > .des_top > .des_top_right > .des_price > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.game_describe > .des_top > .des_top_right > .des_price > span:nth-child(1) {
+  color: #ff2400;
+  font-size: 30px;
+  line-height: 32px;
+}
+.game_describe > .des_top > .des_top_right > .des_price > span:nth-child(2) {
+  color: #747474;
+  font-size: 14px;
+  line-height: 32px;
+  margin-left: 15px;
+  text-decoration: line-through;
+}
+.game_describe > .des_top > .des_top_right > .des_price > span:nth-child(3) {
+  text-align: center;
+  width: 60px;
+  color: #a0f76c;
+  font-size: 16px;
+  background-color: #52872f;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+.game_describe > .des_top > .des_top_right > .sss {
+  border-radius: 10px;
+  text-align: center;
+  line-height: 54px;
+  height: 54px;
+  color: white;
+  float: left;
+}
+.game_describe > .des_top > .des_top_right > .shopping {
+  float: left;
+  width: 216px;
+  font-size: 24px;
+  background: #20abeb;
+}
+.game_describe > .des_top > .des_top_right > .shop_car {
+  float: left;
+  width: 166px;
+  background: #4b86d6;
+  margin-left: 20px;
+  font-size: 22px;
+}
+.game_describe > .des_down {
+  width: 100%;
+  height: 205px;
+  padding: 10px 20px;
+}
+.game_describe > .des_down > div {
+  width: 260px;
+  height: 180px;
+  float: left;
+  margin-right: 40px;
+}
+.game_describe > .des_down > div > img {
+  width: 260px;
+  height: 135px;
+  display: block;
+}
+.game_describe > .des_down > div > div {
+  height: 50px;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  background: #303d4e;
+}
+.game_describe > .des_down > div > div > span {
+  float: left;
+}
+.game_describe > .des_down > div > div > span:nth-child(1) {
+  width: 70px;
+  text-align: center;
+  width: 60px;
+  color: #a0f76c;
+  font-size: 16px;
+  background-color: #52872f;
+  height: 30px;
+  line-height: 30px;
+}
+.game_describe > .des_down > div > div > span:nth-child(2) {
+  width: 80px;
+  height: 100%;
+  padding-left: 20px;
+}
+.game_describe > .des_down > div > div > span:nth-child(2) > s {
+  color: #49687d;
+  font-size: 12px;
+  float: left;
+}
+.game_describe > .des_down > div > div > span:nth-child(2) > b {
+  font-weight: 500;
+  font-size: 12px;
+  color: #b1d2e7;
+  float: left;
+}
+.game_describe > .des_down > div > div > span:nth-child(3) {
+  width: 75px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid #ff2400;
+  color: #ff2400;
+  text-align: center;
+  line-height: 28px;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-top: 2px;
+}
+.game_describe > .des_down > div:nth-child(4) {
+  margin-right: 0;
+}
+.game_introduce {
+  width: 1200px;
+  height: 650px;
+}
+.game_introduce > div {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.game_introduce > div > .title {
+  height: 55px;
+  width: 100%;
+}
+.game_introduce > div > .title > h2 {
+  height: 55px;
+  line-height: 55px;
+}
+.game_introduce > div > .title > h2::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 20px;
+  background: #FF2400;
+  border-radius: 3px;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+}
+.game_introduce > div > .title > h2 > span {
+  font-size: 16px;
+  width: 80px;
+  height: 35px;
+  float: right;
+  border: 1px solid #bdbdbd;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 7px;
+  font-weight: 500;
+  margin: 10px 10px;
+}
+.game_introduce > .intro_box {
+  margin-top: 50px;
+}
+.game_introduce > .intro_box > .intro_title {
+  color: white;
+}
+.game_introduce > .intro_box > .intro_title > h2 {
+  background: #586576;
+}
+.game_introduce > .intro_box > .intro_passage {
+  color: #f2f8ff;
+  background: #818b98;
+  padding: 30px;
+  line-height: 30px;
+  height: 210px;
+  overflow: hidden;
+}
+.game_introduce > .game_tj {
+  margin-top: 50px;
+}
+.game_introduce > .game_tj > .tj_inner {
+  height: 210px;
+  float: left;
+  width: 1200px;
+  padding: 14px 0;
+}
+.game_introduce > .game_tj > .tj_inner > ul > li {
+  width: 275px;
+  height: 190px;
+  margin-left: 30px;
+  float: left;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.game_introduce > .game_tj > .tj_inner > ul > li > pic {
+  display: block;
+  width: 275px;
+  height: 128px;
+  background-size: 100%;
+}
+.game_introduce > .game_tj > .tj_inner > ul > li > div {
+  height: 55px;
+  width: 100%;
+  padding: 10px 0;
+  background: #27303c;
+}
+.game_introduce > .game_tj > .tj_inner > ul > li > div > span {
+  height: 35px;
+  width: 78px;
+  background: #74ad4e;
+  float: left;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.game_introduce > .game_tj > .tj_inner > ul > li > div > div {
+  height: 35px;
+  width: 80px;
+  float: left;
+}
+.game_introduce > .game_tj > .tj_inner > ul > li > div > div > p {
+  margin-left: 15px;
+}
+.game_introduce > .game_tj > .tj_inner > ul > li > div > div > p:nth-child(1) {
+  font-size: 12px;
+  color: #afafaf;
+  text-decoration: line-through;
+}
+.game_introduce > .game_tj > .tj_inner > ul > li > div > div > p:nth-child(2) {
+  font-size: 14px;
+  color: #FF2400;
+}
+.game_introduce > .game_tj > .tj_inner > ul > li > div > s {
+  float: right;
+  width: 100px;
+  height: 35px;
+}
+.game_introduce > .game_tj > .tj_inner > ul > li:nth-child(1) {
+  margin-left: 0;
+}
+.game_introduce > .game_tj > .tj_inner > ul > li:nth-child(1) > pic {
+  background-image: url(../img/index/hot_bimg1.jpg);
+}
+.game_introduce > .game_tj > .tj_inner > ul > li:nth-child(2) > pic {
+  background-image: url(../img/index/hot_bimg2.jpg);
+}
+.game_introduce > .game_tj > .tj_inner > ul > li:nth-child(3) > pic {
+  background-image: url(../img/index/hot_bimg3.jpg);
+}
+.game_introduce > .game_tj > .tj_inner > ul > li:nth-child(4) > pic {
+  background-image: url(../img/index/hot_bimg4.png);
+}

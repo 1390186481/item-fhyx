@@ -13,6 +13,9 @@ li {
 .icon {
   background: url(../img/index/jinglingtu.png);
 }
+.icon2 {
+  background: url(../img/item/item_jltu.png);
+}
 .icon_origin {
   background-position: -28px -389px;
 }
@@ -30,6 +33,30 @@ li {
 }
 .icon_right {
   background-position: -125px -199px;
+}
+.icon2_wx {
+  background-position: -30px -170px;
+}
+.icon2_wb {
+  background-position: -90px -167px;
+}
+.icon2_qq {
+  background-position: -145px -167px;
+}
+.icon2_qqkj {
+  background-position: -200px -167px;
+}
+.icon2_steam {
+  background-position: -120px -40px;
+}
+.icon2_uplay {
+  background-position: -218px -40px;
+}
+.icon2_origin {
+  background-position: -12px -41px;
+}
+.icon2_fhyx {
+  background-position: -20px -92px;
 }
 @keyframes fd {
   0% {
