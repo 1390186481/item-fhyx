@@ -18,7 +18,7 @@ $ git add .         #添加所有文件
 $ git add path/     #添加文件夹
 
 # 提交到本地仓库
-$ git commit -m 'msg'
+$ git commit -m 'first commit'
 
 # 查看提交日志
 $ git log
