@@ -1127,3 +1127,23 @@
 .zhuji_bg > .zhuji > .zhuji_box > ul > .xbox > .xbox_list > .xbox_right > div > div {
   background: #44bb4f;
 }
+.stairs {
+  position: fixed;
+  right: 30px;
+  top: 100px;
+  width: 80px;
+  height: 300px;
+  border-right: 1px solid #FF2400;
+  font-size: 14px;
+  text-align: right;
+}
+.stairs li {
+  width: 60px;
+  height: 50px;
+  color: #999;
+  line-height: 50px;
+}
+.stairs .act-stairs {
+  color: #FF2400;
+  font-weight: 600;
+}

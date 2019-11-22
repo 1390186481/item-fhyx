@@ -18,8 +18,6 @@
 //     $(".sb").addClass('sb_show');
 // })
 
-
-
 //轮播图
 (function() {
     let index = 0,
@@ -218,4 +216,40 @@ $('.one_show').on('mouseout', function(e) {
     $('.group').animate({
         left: 0
     }, 1000);
+})
+
+if ($(document).scrollTop() >= 635) {
+    $('.stairs').css('visibility', 'unset');
+} else {
+    $('.stairs').css('visibility', 'hidden');
+}
+$(window).on('scroll', function() {
+    st = $(document).scrollTop();
+    let index;
+    if (st >= 3450) {
+        index = '';
+        $('.stairs').slideUp(200);
+    } else if (st >= 3080) {
+        index = 4;
+        $('.stairs').slideDown(200);
+    } else if (st >= 2500) {
+        index = 3;
+    } else if (st >= 1900) {
+        index = 2;
+    } else if (st >= 1375) {
+        index = 1;
+    } else if (st >= 635) {
+        index = 0;
+        $('.stairs').css('visibility', 'unset');
+        $('.stairs').slideDown(200);
+    } else {
+        $('.stairs').slideUp(200);
+    }
+    $('.li-sta').removeClass('act-stairs');
+    $(`.li-sta:eq(${index})`).addClass('act-stairs');
+})
+$('.li-sta:last').on('click', function() {
+    $('html,body').animate({
+        scrollTop: 0,
+    }, 500)
 })
