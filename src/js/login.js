@@ -10,7 +10,7 @@ $('.btn:eq(0)').on({
                 success: function(res) {
                     alert(res);
                     if (res == '登陆成功') {
-                        location.href = '../html/index.html';
+                        location.href = '../html/index_.html?1';
                     }
                 }
             })

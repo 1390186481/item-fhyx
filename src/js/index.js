@@ -17,6 +17,12 @@
 //     clearInterval(bannerTimer);
 //     $(".sb").addClass('sb_show');
 // })
+window.onload = function() {
+    if (location.search.slice(1, )) {
+        $('.lg_btn>a').text('欢迎使用');
+        $('.lg_btn>a').attr('href', 'javascript:void(0)');
+    }
+}
 
 //轮播图
 (function() {
