@@ -21,7 +21,6 @@ $('.contain').on('click', '.checkbox', function(ev) {
         } else if (ev.target.className == "checkbox") {
             $(ev.target).children('i').css('display', 'block');
             // $(ev.target).data('boo', '1');
-            console.log()
             cont($(ev.target), 1);
             jude(1);
         }
@@ -47,12 +46,9 @@ function jude(y) {
 }
 
 
-//增减数量
+
 $('.contain').on('click', '.btn>.lt', function(ev) {
-    let x = $(ev.target).next().text();
-    x--;
-    x < 1 ? x = 1 : null;
-    $(ev.target).next().text(x);
+
 })
 $('.contain').on('click', '.btn>.gt', function(ev) {
     let x = $(ev.target).prev().text();
@@ -105,29 +101,32 @@ $('.contain').on('click', '.del_icon', function(ev) {
 function cont(elm, x) {
     let num1 = 0,
         num2 = 0,
+        num = 0,
         less = 0,
         all = 0;
     if (x <= 1) {
-        num1 = parseInt(elm.parent().children('.rice').children(':first').text().slice(1, 4));
-        num2 = parseInt(elm.parent().children('.rice').children(':last').text().slice(1, 4));
-        less = parseInt($('.less>span').text().slice(1, 4));
-        all = parseInt($('.all>span').text().slice(1, 4));
+        num = parseInt(elm.parent().children('.btn').children('span').text());
+        num1 = parseInt(elm.parent().children('.rice').children(':first').text().slice(1, ));
+        num2 = parseInt(elm.parent().children('.rice').children(':last').text().slice(1, ));
+        less = parseInt($('.less>span').text().slice(1, ));
+        all = parseInt($('.all>span').text().slice(1, ));
         num1 = num1 - num2;
         if (x) {
-            less += num1;
-            all += num2;
+            less += num1 * num;
+            all += num2 * num;
         } else {
-            less -= num1;
-            all -= num2;
+            less -= num1 * num;
+            all -= num2 * num;
         }
     } else {
         if (x - 2) {
             for (let i = 0; i < elm.length; i++) {
-                num1 += parseInt($(elm[i]).parent().children('.rice').children(':first').text().slice(1, 4));
-                num2 += parseInt($(elm[i]).parent().children('.rice').children(':last').text().slice(1, 4));
+                num = parseInt($(elm[i]).parent().children('.btn').children('span').text());
+                num1 += parseInt($(elm[i]).parent().children('.rice').children(':first').text().slice(1, ));
+                num2 += parseInt($(elm[i]).parent().children('.rice').children(':last').text().slice(1, ));
             }
-            less = num1 - num2;
-            all = num2;
+            less = (num1 - num2) * num;
+            all = num2 * num;
         } else {
             less = 0;
             all = 0;
@@ -136,3 +135,51 @@ function cont(elm, x) {
     $('.less>span').text(`￥${less}.00`);
     $('.all>span').text(`￥${all}.00`)
 }
+
+
+//增减数量
+$('.contain').on('click', '.btn>.lt', function(ev) {
+    let num1 = 0,
+        num2 = 0,
+        num = 0,
+        less = 0,
+        all = 0;
+    // $(ev.target).next().text(x);
+    num = $(ev.target).next().text();
+    num--;
+    if (num < 1) {
+        return;
+    }
+    $(ev.target).next().text(num);
+    if ($(ev.target.parentElement.parentElement).children('.checkbox').children('i').css('display') == 'block') {
+        less = parseInt($('.less>span').text().slice(1, ));
+        all = parseInt($('.all>span').text().slice(1, ));
+        num1 = parseInt($(ev.target.parentElement.parentElement).children('.rice').children(':first').text().slice(1, ));
+        num2 = parseInt($(ev.target.parentElement.parentElement).children('.rice').children(':last').text().slice(1, ));
+        num1 = num1 - num2;
+        less -= num1;
+        all -= num2;
+        $('.less>span').text(`￥${less}.00`);
+        $('.all>span').text(`￥${all}.00`)
+    }
+})
+$('.contain').on('click', '.btn>.gt', function(ev) {
+    let num1 = 0,
+        num2 = 0,
+        num = 0,
+        less = 0,
+        all = 0;
+    if ($(ev.target.parentElement.parentElement).children('.checkbox').children('i').css('display') == 'block') {
+        less = parseInt($('.less>span').text().slice(1, ));
+        all = parseInt($('.all>span').text().slice(1, ));
+        num1 = parseInt($(ev.target.parentElement.parentElement).children('.rice').children(':first').text().slice(1, ));
+        num2 = parseInt($(ev.target.parentElement.parentElement).children('.rice').children(':last').text().slice(1, ));
+        num1 = num1 - num2;
+        less += num1;
+        all += num2;
+        console.log(num2)
+        console.log(all)
+        $('.less>span').text(`￥${less}.00`);
+        $('.all>span').text(`￥${all}.00`)
+    }
+})

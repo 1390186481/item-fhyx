@@ -189,7 +189,7 @@ html {
   font-size: 16px;
 }
 .box > .car_bottom > .car_price {
-  width: 350px;
+  width: 360px;
   height: 100px;
   float: right;
   position: relative;
@@ -209,6 +209,8 @@ html {
 }
 .box > .car_bottom > .car_price > .all > span {
   color: #ff2400;
+  display: inline-block;
+  width: 100px;
 }
 .box > .car_bottom > .car_price > div {
   width: 140px;
