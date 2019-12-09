@@ -183,3 +183,22 @@ $('.contain').on('click', '.btn>.gt', function(ev) {
         $('.all>span').text(`￥${all}.00`)
     }
 })
+
+//登陆后
+if (cookie.get('phone')) {
+    $('.login>span').css('display', 'block');
+    $('.login>span').text(`${cookie.get('phone')}`);
+    $('.lg_btn>a').text(`退出`);
+    $('.lg_btn>a').attr('href', 'javascript:void(0)');
+
+    $('.login').on('click', function(e) {
+        if (e.target.innerHTML == '退出') {
+            $('.login>span').css('display', 'none');
+            $('.login>span').text('');
+            $('.lg_btn>a').text(`登陆`);
+            setTimeout(function() {
+                $('.lg_btn>a').attr('href', '../html/login.html');
+            }, 0)
+        }
+    })
+}

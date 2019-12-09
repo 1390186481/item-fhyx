@@ -52,7 +52,7 @@ $('.intro_title>h2>span').on('click', function() {
 })
 
 //渲染
-let baseUrl = "http://localhost:8080/qf/item";
+let baseUrl = "http://127.0.0.1:8080/qf/item";
 let num = location.search.slice(4, );
 console.log(num)
 $.ajax({
@@ -87,3 +87,22 @@ $.ajax({
         })
     }
 })
+
+//登陆后
+if (cookie.get('phone')) {
+    $('.login>span').css('display', 'block');
+    $('.login>span').text(`${cookie.get('phone')}`);
+    $('.lg_btn>a').text(`退出`);
+    $('.lg_btn>a').attr('href', 'javascript:void(0)');
+
+    $('.login').on('click', function(e) {
+        if (e.target.innerHTML == '退出') {
+            $('.login>span').css('display', 'none');
+            $('.login>span').text('');
+            $('.lg_btn>a').text(`登陆`);
+            setTimeout(function() {
+                $('.lg_btn>a').attr('href', '../html/login.html');
+            }, 0)
+        }
+    })
+}
