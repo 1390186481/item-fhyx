@@ -52,7 +52,7 @@ $('.intro_title>h2>span').on('click', function() {
 })
 
 //渲染
-let baseUrl = "http://10.31.154.72:8080/qf/item";
+let baseUrl = "http://localhost:8080/qf/item";
 let num = location.search.slice(4, );
 console.log(num)
 $.ajax({

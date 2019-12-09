@@ -14,7 +14,7 @@ $('.btn:eq(0)').on({
             reg2 = /^.{6,18}$/;
         if (reg1.test($('#phone').val()) && reg2.test($('#password').val())) {
             $.ajax({
-                url: "http://10.31.154.72:8080/qf/item/src/php/login.php",
+                url: "http://localhost:8080/qf/item/src/php/login.php",
                 type: 'get',
                 data: { 'phone': $('#phone').val(), 'password': `${$('#password').val()}` },
                 success: function(res) {

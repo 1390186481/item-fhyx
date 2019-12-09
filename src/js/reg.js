@@ -50,7 +50,7 @@ $('.btn').on({
     'click': function() {
         if ($('#password+span').text() == '√' && $('#password+span').text() == '√' && $('#repassword+span').text() == '√' && $('#checkbox').prop('checked') == true) {
             $.ajax({
-                url: "http://10.31.154.72:8080/qf/item/src/php/reg.php",
+                url: "http://localhost:8080/qf/item/src/php/reg.php",
                 type: 'get',
                 data: { 'phone': $('#phone').val(), 'password': `${$('#password').val()}` },
                 success: function(res) {
