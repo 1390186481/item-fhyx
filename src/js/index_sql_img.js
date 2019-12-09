@@ -1,4 +1,4 @@
-let baseUrl = "http://127.0.0.1:8080/qf/item";
+let baseUrl = "http://10.31.154.72:8080/qf/item";
 //加载图片
 $.ajax({
     url: `${baseUrl}/src/php/getall.php`,

@@ -121,10 +121,23 @@ window.onload = function() {
     objBanner.fn();
     objBanner.fn_hot();
 
-
-    if (location.search.slice(1, )) {
-        $('.lg_btn>a').text('欢迎使用');
+    //登陆后
+    if (cookie.get('phone')) {
+        $('.login>span').css('display', 'block');
+        $('.login>span').text(`${cookie.get('phone')}`);
+        $('.lg_btn>a').text(`退出`);
         $('.lg_btn>a').attr('href', 'javascript:void(0)');
+
+        $('.login').on('click', function(e) {
+            if (e.target.innerHTML == '退出') {
+                $('.login>span').css('display', 'none');
+                $('.login>span').text('');
+                $('.lg_btn>a').text(`登陆`);
+                setTimeout(function() {
+                    $('.lg_btn>a').attr('href', '../html/login.html');
+                }, 0)
+            }
+        })
     }
 
     // PCgame 滑动游戏选项卡
@@ -203,10 +216,16 @@ window.onload = function() {
 
 
     //展开动画
-    $('.one_show').on('mouseover', function(e) {
-        let index = $(e.target).data("index"),
+    $('.onegroup').on('mouseover', function(e) {
+        console.log(1)
+        let index,
             left;
-        $('.one_show').stop(true, false);
+        if (e.target.tagName == 'IMG') {
+            index = $(e.target).data("index");
+        } else {
+            index = $(e.target.children[0]).data("index");
+        }
+        $('.one_show:eq(' + index + ')').stop(true, false);
         $('.group').stop(true, false);
         $('.one_show:eq(' + index + ')').animate({
             width: '1212px'
@@ -215,10 +234,17 @@ window.onload = function() {
         $('.group').animate({
             left: left
         }, 1000);
+
     })
-    $('.one_show').on('mouseout', function(e) {
-        let index = $(e.target).data("index");
-        $('.one_show').stop(true, false);
+    $('.onegroup').on('mouseout', function(e) {
+        e.p
+        console.log(2)
+        if (e.target.tagName == 'IMG') {
+            index = $(e.target).data("index");
+        } else {
+            index = $(e.target.children[0]).data("index");
+        }
+        $('.one_show:eq(' + index + ')').stop(true, false);
         $('.group').stop(true, false);
         $('.one_show:eq(' + index + ')').animate({
             width: '286px'
@@ -239,6 +265,8 @@ window.onload = function() {
     //楼梯
     $(window).on('scroll', function() {
         st = $(document).scrollTop();
+        $('.stairs').css('top', st - 650 + 'px');
+        console.log(st)
         let index;
         if (st >= 3450) {
             index = '';
